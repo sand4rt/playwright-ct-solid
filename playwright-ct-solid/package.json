@@ -1,0 +1,49 @@
+{
+  "name": "@sand4rt/experimental-ct-solid",
+  "version": "1.53.0",
+  "description": "Playwright Component Testing for Solid",
+  "homepage": "https://playwright.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sand4rt/playwright-ct-solid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sand4rt/playwright-ct-solid/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "solid components",
+    "real browser",
+    "playwright",
+    "unit",
+    "integration",
+    "functional",
+    "end to end",
+    "e2e"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./register": {
+      "types": "./register.d.ts",
+      "default": "./register.mjs"
+    },
+    "./hooks": {
+      "types": "./hooks.d.ts",
+      "default": "./hooks.mjs"
+    }
+  },
+  "dependencies": {
+    "@playwright/experimental-ct-core": "1.53.0",
+    "vite-plugin-solid": "^2.7.0"
+  },
+  "bin": {
+    "playwright": "cli.js"
+  }
+}

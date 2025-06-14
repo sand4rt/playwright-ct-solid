@@ -1,0 +1,20 @@
+{
+  "name": "sand4rt",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sand4rt/playwright-ct-solid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sand4rt/playwright-ct-solid/issues"
+  },
+  "homepage": "https://github.com/sand4rt/playwright-ct-solid#readme",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+  },
+  "scripts": {
+    "test": "pnpm --stream -r test",
+    "build": "pnpm --stream -r build"
+  }
+}
