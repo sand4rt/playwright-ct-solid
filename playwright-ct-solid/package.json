@@ -1,6 +1,6 @@
 {
   "name": "@sand4rt/experimental-ct-solid",
-  "version": "1.53.0",
+  "version": "1.52.0",
   "description": "Playwright Component Testing for Solid",
   "homepage": "https://playwright.dev",
   "repository": {
@@ -12,6 +12,9 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "author": {
+    "name": "sand4rt"
   },
   "license": "MIT",
   "keywords": [
@@ -39,11 +42,22 @@
       "default": "./hooks.mjs"
     }
   },
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "bin": {
+    "playwright": "cli.js"
+  },
   "dependencies": {
     "@playwright/experimental-ct-core": "1.53.0",
     "vite-plugin-solid": "^2.7.0"
   },
-  "bin": {
-    "playwright": "cli.js"
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "13.0.1",
+    "@semantic-release/github": "11.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/release-notes-generator": "14.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "semantic-release": "24.2.5"
   }
 }
