@@ -1,7 +1,7 @@
-# 🎭 Playwright Angular component testing
+# 🎭 Playwright Solid component testing
 
 > **Note**
-> The API has been designed to closely resemble Playwright's API wherever applicable. This library is _(without guarantee)_ aimed at facilitating a smooth transition to Playwright once it offers official support for Angular components. It is important to take into account that this library will reach end of life when Playwright has official support for Angular component testing.
+> The API has been designed to closely resemble Playwright's API wherever applicable. This library is _(without guarantee)_ aimed at facilitating a smooth transition to Playwright once it offers official support for Solid components. It is important to take into account that this library will reach end of life when Playwright has official support for Solid component testing.
 >
 > To push for official support, feedback in the form of GitHub issues and or stars is appreciated!
 
@@ -26,7 +26,7 @@ Along with all these ✨ awesome capabilities ✨ that come with Playwright, you
 
 ## Usage
 
-Initialize Playwright Angular component testing with PNPM, NPM or Yarn and follow the installation steps:
+Initialize Playwright Solid component testing with PNPM, NPM or Yarn and follow the installation steps:
 
 ```sh
 pnpm create playwright-sand4rt --ct
@@ -41,32 +41,25 @@ yarn create playwright-sand4rt --ct
 Now you can start creating your tests:
 
 ```ts
-// button.component.ts
-import { Component, Input } from '@angular/core';
+// button.tsx
+type ButtonProps = {
+  title: string;
+}
 
-@Component({
-  standalone: true,
-  selector: 'button-component',
-  template: `<button>{{title}}</button>`,
-})
-export class ButtonComponent {
-  @Input() title!: string;
+export function Button(props: ButtonProps) {
+  return <button>{props.title}</button>
 }
 ```
 
-```ts
-// button.component.test.ts
-import { test, expect } from '@sand4rt/experimental-ct-angular';
-import { ButtonComponent } from './components/button.component';
+```jsx
+// button.test.tsx
+import { test, expect } from '@sand4rt/experimental-ct-solid';
+import { Button } from './components/button';
 
 test('render props', async ({ mount }) => {
-  const component = await mount(ButtonComponent, {
-    props: {
-      title: 'Submit',
-    },
-  });
+  const component = await mount(<Button title="Submit" />);
   await expect(component).toContainText('Submit');
 });
 ```
 
-See the official [playwright component testing documentation](https://playwright.dev/docs/test-components) and the [tests](https://github.com/sand4rt/playwright-ct-angular/tree/main/ct-angular/tests) for more information on how to use it.
+See the official [playwright component testing documentation](https://playwright.dev/docs/test-components) and the [tests](https://github.com/sand4rt/playwright-ct-solid/tree/main/ct-solid/tests) for more information on how to use it.
