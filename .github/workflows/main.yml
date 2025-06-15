@@ -2,9 +2,9 @@ name: Main
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test:
@@ -15,14 +15,14 @@ jobs:
       - name: PNPM Setup
         uses: pnpm/action-setup@v2
         with:
-          version: '10.x'
+          version: "10.x"
 
       - uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18.20.8'
+          node-version: "18.20.8"
           cache: "pnpm"
 
       - name: Install dependencies
@@ -53,17 +53,17 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     permissions:
-      contents: write         # to be able to publish a GitHub release
-      issues: write           # to be able to comment on released issues
-      pull-requests: write    # to be able to comment on released pull requests
-      id-token: write         # to enable use of OIDC for npm provenance
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     needs:
       - test
     steps:
       - name: PNPM Setup
         uses: pnpm/action-setup@v2
         with:
-          version: '10.x'
+          version: "10.x"
       - name: Checkout
         uses: actions/checkout@v4
         with:
