@@ -1,7 +1,7 @@
 import { Routes, Route, A } from '@solidjs/router';
 import logo from './assets/logo.svg';
-import LoginPage from './pages/LoginPage';
-import DashboardPage from './pages/DashboardPage';
+import { LoginPage } from './pages/LoginPage';
+import { DashboardPage } from './pages/DashboardPage';
 
 export function App() {
   return <>
