@@ -1,3 +1,4 @@
 packages:
   - "ct-solid/**"
   - "playwright-ct-solid/**"
+  - "semantic-release-version-mirror/**"

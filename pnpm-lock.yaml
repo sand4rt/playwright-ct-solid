@@ -58,6 +58,15 @@ importers:
         specifier: 24.2.5
         version: 24.2.5(typescript@5.4.3)
 
+  semantic-release-version-mirror:
+    dependencies:
+      semantic-release:
+        specifier: ^24.2.5
+        version: 24.2.5(typescript@5.4.3)
+      semver:
+        specifier: 7.7.2
+        version: 7.7.2
+
 packages:
 
   '@ampproject/remapping@2.3.0':
