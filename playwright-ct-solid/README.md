@@ -1,12 +1,5 @@
 # 🎭 Playwright Solid component testing
 
-> **Note**
-> The API has been designed to closely resemble Playwright's API wherever applicable. This library is _(without guarantee)_ aimed at facilitating a smooth transition to Playwright once it offers official support for Solid components. It is important to take into account that this library will reach end of life when Playwright has official support for Solid component testing.
->
-> To push for official support, feedback in the form of GitHub issues and or stars is appreciated!
-
-## Capabilities
-
 - Run tests fast, in parallel and optionally over multiple machines with [sharding](https://playwright.dev/docs/test-sharding) or [Azure's Testing Service](https://www.youtube.com/watch?v=FvyYC2pxL_8).
 - Run the test headless or headed accross multiple _real_ desktop and/or mobile browser engines.
 - Full support for shadow DOM, multiple origins, (i)frames, browser tabs and contexts.
