@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@playwright/experimental-ct-core": "1.54.1",
-    "vite-plugin-solid": "^2.11.7"
+    "vite-plugin-solid": "^2.11.8"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "13.0.1",
