@@ -11,7 +11,7 @@
     "url": "https://github.com/sand4rt/playwright-ct-solid/issues"
   },
   "engines": {
-    "node": ">=22.17.1"
+    "node": ">=22.18.0"
   },
   "author": {
     "name": "sand4rt"
