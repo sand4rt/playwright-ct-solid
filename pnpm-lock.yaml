@@ -36,8 +36,8 @@ importers:
         specifier: 1.56.1
         version: 1.56.1(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0)
       vite-plugin-solid:
-        specifier: ^2.11.8
-        version: 2.11.8(solid-js@1.9.7)(vite@7.0.8(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0))
+        specifier: ^2.11.10
+        version: 2.11.10(solid-js@1.9.7)(vite@7.0.8(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0))
     devDependencies:
       '@semantic-release/commit-analyzer':
         specifier: 13.0.1
@@ -2354,22 +2354,22 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
+  vite-plugin-solid@2.11.10:
+    resolution: {integrity: sha512-Yr1dQybmtDtDAHkii6hXuc1oVH9CPcS/Zb2jN/P36qqcrkNnVPsMTzQ06jyzFPFjj3U1IYKMVt/9ZqcwGCEbjw==}
+    peerDependencies:
+      '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
+      solid-js: ^1.7.2
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+    peerDependenciesMeta:
+      '@testing-library/jest-dom':
+        optional: true
+
   vite-plugin-solid@2.11.6:
     resolution: {integrity: sha512-Sl5CTqJTGyEeOsmdH6BOgalIZlwH3t4/y0RQuFLMGnvWMBvxb4+lq7x3BSiAw6etf0QexfNJW7HSOO/Qf7pigg==}
     peerDependencies:
       '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
       solid-js: ^1.7.2
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-    peerDependenciesMeta:
-      '@testing-library/jest-dom':
-        optional: true
-
-  vite-plugin-solid@2.11.8:
-    resolution: {integrity: sha512-hFrCxBfv3B1BmFqnJF4JOCYpjrmi/zwyeKjcomQ0khh8HFyQ8SbuBWQ7zGojfrz6HUOBFrJBNySDi/JgAHytWg==}
-    peerDependencies:
-      '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
-      solid-js: ^1.7.2
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
     peerDependenciesMeta:
       '@testing-library/jest-dom':
         optional: true
@@ -4809,7 +4809,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@7.0.8(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0)):
+  vite-plugin-solid@2.11.10(solid-js@1.9.7)(vite@7.0.8(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0)):
     dependencies:
       '@babel/core': 7.24.0
       '@types/babel__core': 7.20.5
@@ -4822,7 +4822,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.11.8(solid-js@1.9.7)(vite@7.0.8(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0)):
+  vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@7.0.8(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0)):
     dependencies:
       '@babel/core': 7.24.0
       '@types/babel__core': 7.20.5
