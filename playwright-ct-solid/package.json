@@ -49,7 +49,7 @@
     "playwright": "cli.js"
   },
   "dependencies": {
-    "@playwright/experimental-ct-core": "1.57.0",
+    "@playwright/experimental-ct-core": "1.58.0",
     "vite-plugin-solid": "^2.11.10"
   },
   "devDependencies": {
