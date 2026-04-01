@@ -33,8 +33,8 @@ importers:
   playwright-ct-solid:
     dependencies:
       '@playwright/experimental-ct-core':
-        specifier: 1.58.2
-        version: 1.58.2(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.32.0)(sass@1.71.1)(terser@5.40.0)
+        specifier: 1.59.0
+        version: 1.59.0(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.32.0)(sass@1.71.1)(terser@5.40.0)
       vite-plugin-solid:
         specifier: ^2.11.10
         version: 2.11.10(solid-js@1.9.7)(vite@8.0.0(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(sass@1.71.1)(terser@5.40.0))
@@ -452,8 +452,8 @@ packages:
   '@oxc-project/types@0.115.0':
     resolution: {integrity: sha512-4n91DKnebUS4yjUHl2g3/b2T+IUdCfmoZGhmwsovZCDaJSs+QkVAM+0AqqTxHSsHfeiMuueT75cZaZcT/m0pSw==}
 
-  '@playwright/experimental-ct-core@1.58.2':
-    resolution: {integrity: sha512-Imif9ggQp6YIblHAX6MvJuqDFrCGHYspoibxLP3+1soXp+1wBNuuSRajv0VWXzFbh//4l29I+xy2tpTgej0vEA==}
+  '@playwright/experimental-ct-core@1.59.0':
+    resolution: {integrity: sha512-RtzPWWuJng8wfHY8prbQO+FpQQiAaMvDt7SAXYVeSv8MEblxAAAxo4eWMzK/FYjY0HiUzb63iR/LcFE0rSw+tQ==}
     engines: {node: '>=18'}
 
   '@pnpm/config.env-replace@1.1.0':
@@ -2043,19 +2043,15 @@ packages:
     resolution: {integrity: sha512-C+VUP+8jis7EsQZIhDYmS5qlNtjv2yP4SNtjXK9AP1ZcTRlnSfuumaTnRfYZnYgUUYVIKqL0fRvmUGDV2fmp6g==}
     engines: {node: '>=4'}
 
-  playwright-core@1.58.2:
-    resolution: {integrity: sha512-yZkEtftgwS8CsfYo7nm0KE8jsvm6i/PTgVtB8DL726wNf6H2IMsDuxCpJj59KDaxCtSnrWan2AeDqM7JBaultg==}
+  playwright-core@1.59.0:
+    resolution: {integrity: sha512-PW/X/IoZ6BMUUy8rpwHEZ8Kc0IiLIkgKYGNFaMs5KmQhcfLILNx9yCQD0rnWeWfz1PNeqcFP1BsihQhDOBCwZw==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.58.2:
-    resolution: {integrity: sha512-vA30H8Nvkq/cPBnNw4Q8TWz1EJyqgpuinBcHET0YVJVFldr8JDNiU9LaWAE1KqSkRYazuaBhTpB5ZzShOezQ6A==}
+  playwright@1.59.0:
+    resolution: {integrity: sha512-wihGScriusvATUxmhfENxg0tj1vHEFeIwxlnPFKQTOQVd7aG08mUfvvniRP/PtQOC+2Bs52kBOC/Up1jTXeIbw==}
     engines: {node: '>=18'}
     hasBin: true
-
-  postcss@8.5.6:
-    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.8:
     resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
@@ -3040,10 +3036,10 @@ snapshots:
 
   '@oxc-project/types@0.115.0': {}
 
-  '@playwright/experimental-ct-core@1.58.2(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.32.0)(sass@1.71.1)(terser@5.40.0)':
+  '@playwright/experimental-ct-core@1.59.0(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.32.0)(sass@1.71.1)(terser@5.40.0)':
     dependencies:
-      playwright: 1.58.2
-      playwright-core: 1.58.2
+      playwright: 1.59.0
+      playwright-core: 1.59.0
       vite: 6.4.1(@types/node@22.15.24)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.32.0)(sass@1.71.1)(terser@5.40.0)
     transitivePeerDependencies:
       - '@types/node'
@@ -4588,19 +4584,13 @@ snapshots:
       find-up: 2.1.0
       load-json-file: 4.0.0
 
-  playwright-core@1.58.2: {}
+  playwright-core@1.59.0: {}
 
-  playwright@1.58.2:
+  playwright@1.59.0:
     dependencies:
-      playwright-core: 1.58.2
+      playwright-core: 1.59.0
     optionalDependencies:
       fsevents: 2.3.2
-
-  postcss@8.5.6:
-    dependencies:
-      nanoid: 3.3.11
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.5.8:
     dependencies:
@@ -5136,7 +5126,7 @@ snapshots:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
-      postcss: 8.5.6
+      postcss: 8.5.8
       rollup: 4.52.5
       tinyglobby: 0.2.15
     optionalDependencies:
